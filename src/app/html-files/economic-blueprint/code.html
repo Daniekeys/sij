@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Economic Blueprint | Shola Jimmy Idiagbon</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#ffe088",
+                    "on-tertiary-fixed": "#340f12",
+                    "error": "#ba1a1a",
+                    "background": "#f9f9f8",
+                    "surface-container-low": "#f3f4f3",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#191c1c",
+                    "primary-container": "#013220",
+                    "tertiary-fixed-dim": "#f8b6b6",
+                    "surface": "#f9f9f8",
+                    "surface-bright": "#f9f9f8",
+                    "on-primary-fixed": "#002113",
+                    "inverse-on-surface": "#f0f1f0",
+                    "on-background": "#191c1c",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#ffdad9",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e1e3e2",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#bdedd2",
+                    "primary": "#001b0f",
+                    "on-tertiary-fixed-variant": "#68393b",
+                    "secondary-fixed-dim": "#e9c349",
+                    "tertiary-container": "#471e20",
+                    "on-tertiary-container": "#be8283",
+                    "outline-variant": "#c1c8c2",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-surface-variant": "#414943",
+                    "on-primary-fixed-variant": "#234f3b",
+                    "surface-dim": "#d9dad9",
+                    "surface-container": "#edeeed",
+                    "on-secondary-container": "#745c00",
+                    "surface-container-high": "#e7e8e7",
+                    "secondary": "#735c00",
+                    "secondary-container": "#fed65b",
+                    "primary-fixed-dim": "#a2d1b7",
+                    "tertiary": "#2d0a0d",
+                    "on-primary-container": "#6f9c84",
+                    "surface-container-highest": "#e1e3e2",
+                    "on-secondary-fixed": "#241a00",
+                    "inverse-surface": "#2e3131",
+                    "surface-tint": "#3b6751",
+                    "outline": "#717973",
+                    "inverse-primary": "#a2d1b7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Instrument Serif", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .grid-pattern {
+            background-image: radial-gradient(circle, #e1e3e2 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9f8]/80 dark:bg-[#001b0f]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif tracking-tight text-[#013220] dark:text-[#f3f4f3]">
+                The Sovereign Editorial
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#013220] dark:text-[#ffffff] border-b-2 border-[#013220] dark:border-[#f3f4f3] pb-1 font-['Instrument_Serif'] font-medium text-lg" href="#">Economic Blueprint</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#013220] dark:hover:text-[#f3f4f3] transition-colors font-['Instrument_Serif'] font-medium text-lg" href="#">Legacy</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#013220] dark:hover:text-[#f3f4f3] transition-colors font-['Instrument_Serif'] font-medium text-lg" href="#">Policy</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#013220] dark:hover:text-[#f3f4f3] transition-colors font-['Instrument_Serif'] font-medium text-lg" href="#">Metrics</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-outline text-sm mr-2">search</span>
+<span class="text-on-surface-variant text-sm">Search archive...</span>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-medium hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-90 transition-transform">
+                    Support
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 grid-pattern min-h-screen">
+<div class="max-w-screen-xl mx-auto px-8">
+<!-- Hero / Executive Profile Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24">
+<div class="md:col-span-8 flex flex-col justify-end">
+<div class="inline-flex items-center px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase mb-6">
+                        Executive Strategy 2024
+                    </div>
+<h1 class="text-7xl md:text-8xl font-headline text-primary leading-[0.9] tracking-tight mb-8">
+                        Shola Jimmy <br/> <span class="italic text-secondary">Idiagbon</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant font-light max-w-2xl leading-relaxed">
+                        Architect of global economic bridges, specializing in large-scale infrastructure and high-stakes energy consultancy. Championing the fusion of UAE capital with Nigerian industrial potential.
+                    </p>
+</div>
+<div class="md:col-span-4">
+<div class="relative group">
+<div class="absolute inset-0 bg-primary translate-x-4 translate-y-4 rounded-xl -z-10 opacity-10 group-hover:translate-x-6 group-hover:translate-y-6 transition-transform duration-500"></div>
+<img class="w-full aspect-[4/5] object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" data-alt="Sophisticated professional portrait of Shola Jimmy Idiagbon in a dark tailored suit, soft cinematic lighting, neutral editorial background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9457J5X_SV1M8u5COL5Z5ZFAo0mozNnIjfCr5xJaUH05uIMN7GfBtC7UgCoXReGDz2JYV8htbkR5JuwCI2CSFoZObjHrAApI_b_hPiYq5_QpQ3zKlhuyTjKsP1YD1ma_GzWz7yHAtqplZp2B_-nA2qyE5gmhMrfF8TatUOaHd7Kuaxpi-A8Tjo4tBkY21lXL4umBmLC4bXD4pv36_RkvGBI0v-XvtNp66B5ORpDiwq276WDnjzXrUL6AF_Hhnh_TV59_krVj08iw"/>
+</div>
+</div>
+</section>
+<!-- Impact Metrics (Tonal Layering) -->
+<section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-24">
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col items-center text-center">
+<span class="text-4xl font-headline text-primary mb-2">15+</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Years Global Experience</span>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col items-center text-center">
+<span class="text-4xl font-headline text-secondary mb-2">$2B+</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Capital Managed</span>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col items-center text-center">
+<span class="text-4xl font-headline text-primary mb-2">3</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Continents Navigated</span>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col items-center text-center">
+<span class="text-4xl font-headline text-secondary mb-2">98%</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Efficiency Rate</span>
+</div>
+</section>
+<!-- Core Pillars (The Bento Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pillar 1: Global Energy Solutions -->
+<div class="md:col-span-2 bg-surface-container-lowest p-12 rounded-xl shadow-sm group">
+<div class="flex items-start justify-between mb-12">
+<div class="flex flex-col">
+<span class="material-symbols-outlined text-secondary text-5xl mb-4" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h2 class="text-4xl font-headline text-primary">Global Energy Solutions</h2>
+</div>
+<div class="px-4 py-2 bg-primary-fixed text-on-primary-fixed rounded-full text-xs font-bold">CORE DOMAIN</div>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                                Strategy development for sustainable hydrocarbon extraction and renewable energy integration across West Africa and the Gulf.
+                            </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Upstream Asset Management
+                                </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Energy Transition Policy
+                                </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Supply Chain Resilience
+                                </li>
+</ul>
+</div>
+<div class="h-64 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Aerial cinematic view of a modern clean energy processing plant during blue hour with glowing lights and steam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvyzsHXdI-84axW4y1c7I5jj9DqUr7KyjWmPWTefV_2npQ3wtASxq7-sQ87SaIeqxPHGoK2V9zXF4WR8uOGY83fCqP8a86ghp88vImkwqMD8yeG74bm2-9iKbZLIkhlZMHpAs7H-UQYNM_G0hfUa1vleF0KgJkbxOlUE4FrWrR_RAaFUNRrqihzm1ve8B5IwAlK_YMKPSO9IpZ85ZaKFToUlIUMPcTJD1aNVnnaEGNVCVtYDXrUFnZHGtvt6Sqja-uSs0eFB6qyEQ"/>
+</div>
+</div>
+</div>
+<!-- Technical Skills Column (CV Style) -->
+<div class="bg-primary text-on-primary p-12 rounded-xl flex flex-col justify-between">
+<div>
+<h3 class="text-2xl font-headline mb-8 border-b border-on-primary/10 pb-4">Executive Competencies</h3>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">assignment</span>
+<div>
+<div class="font-semibold text-lg">Project Management</div>
+<p class="text-sm text-primary-fixed-dim font-light">Agile methodologies for global infrastructure scaling.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">analytics</span>
+<div>
+<div class="font-semibold text-lg">Conflict Analysis</div>
+<p class="text-sm text-primary-fixed-dim font-light">Strategic resolution in multi-stakeholder corporate environments.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">public</span>
+<div>
+<div class="font-semibold text-lg">Policy Influence</div>
+<p class="text-sm text-primary-fixed-dim font-light">Navigating sovereign regulatory frameworks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-on-primary/10">
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-on-primary/10 rounded-full text-[10px] tracking-widest uppercase">LSE Alumnus</span>
+<span class="px-3 py-1 bg-on-primary/10 rounded-full text-[10px] tracking-widest uppercase">PMP Certified</span>
+<span class="px-3 py-1 bg-on-primary/10 rounded-full text-[10px] tracking-widest uppercase">Strategic Lead</span>
+</div>
+</div>
+</div>
+<!-- Pillar 2: IT Infrastructure -->
+<div class="bg-surface-container-low p-12 rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">database</span>
+<h2 class="text-3xl font-headline text-primary mb-4">IT Infrastructure</h2>
+<p class="text-on-surface-variant font-light mb-8 leading-relaxed">
+                        Modernizing digital backbones to support 21st-century commerce. Specialized in secure data architecture and smart-city integration for emerging hubs.
+                    </p>
+<div class="space-y-3">
+<div class="h-2 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container w-[85%]"></div>
+</div>
+<div class="flex justify-between text-[10px] font-bold uppercase tracking-widest">
+<span>Data Sovereignty</span>
+<span>85% Compliance</span>
+</div>
+</div>
+</div>
+<!-- Pillar 3: UAE Investment to Ilorin -->
+<div class="md:col-span-2 bg-secondary-container text-on-secondary-container p-12 rounded-xl relative overflow-hidden flex flex-col justify-center">
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[300px]" style="font-variation-settings: 'FILL' 1;">handshake</span>
+</div>
+<div class="max-w-xl relative z-10">
+<h2 class="text-5xl font-headline leading-tight mb-6">Attracting UAE Investment to Ilorin</h2>
+<p class="text-lg font-medium opacity-90 mb-8 leading-relaxed">
+                            Creating a premier investment corridor. By aligning UAE's diversified wealth with Kwara State's strategic positioning, we are unlocking a new era of industrialization and trade.
+                        </p>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold flex items-center gap-3 hover:shadow-xl transition-all">
+                            View Blueprint
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Archival Quote Section -->
+<section class="mt-24 py-24 border-y border-outline-variant/30 text-center">
+<span class="text-secondary font-bold text-6xl mb-8 block opacity-20">"</span>
+<p class="text-4xl md:text-5xl font-headline text-primary max-w-4xl mx-auto leading-tight italic">
+                    Economic integrity is not a metric of wealth, but a measure of stability. We build for the next generation, not the next quarter.
+                </p>
+<span class="mt-8 block font-label text-sm uppercase tracking-[0.3em] text-on-surface-variant">— S.J. Idiagbon</span>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f3f4f3] dark:bg-[#001b0f] w-full">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-serif text-xl text-[#013220] dark:text-[#f3f4f3] mb-2">The Sovereign Editorial</div>
+<div class="font-['Inter'] text-sm tracking-wide text-[#013220] dark:text-[#f3f4f3] opacity-70">
+                    © 2024 The Sovereign Editorial. All Rights Reserved.
+                </div>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Inter'] text-sm tracking-wide text-[#013220] dark:text-[#f3f4f3]">
+<a class="opacity-70 hover:opacity-100 hover:text-[#013220] dark:hover:text-white transition-all duration-200" href="#">Integrity Report</a>
+<a class="opacity-70 hover:opacity-100 hover:text-[#013220] dark:hover:text-white transition-all duration-200" href="#">Privacy Policy</a>
+<a class="opacity-70 hover:opacity-100 hover:text-[#013220] dark:hover:text-white transition-all duration-200" href="#">Archival Access</a>
+<a class="opacity-70 hover:opacity-100 hover:text-[#013220] dark:hover:text-white transition-all duration-200" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

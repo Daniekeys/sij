@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SIJ Impact | Record of Service</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#013220",
+              "surface-dim": "#d9dad9",
+              "on-tertiary-container": "#be8283",
+              "tertiary": "#2d0a0d",
+              "surface": "#f9f9f8",
+              "on-surface": "#191c1c",
+              "secondary": "#735c00",
+              "primary-fixed": "#bdedd2",
+              "surface-variant": "#e1e3e2",
+              "outline-variant": "#c1c8c2",
+              "outline": "#717973",
+              "on-primary-fixed": "#002113",
+              "on-tertiary-fixed": "#340f12",
+              "error-container": "#ffdad6",
+              "secondary-fixed": "#ffe088",
+              "tertiary-container": "#471e20",
+              "tertiary-fixed-dim": "#f8b6b6",
+              "on-error-container": "#93000a",
+              "inverse-primary": "#a2d1b7",
+              "on-error": "#ffffff",
+              "surface-container-high": "#e7e8e7",
+              "on-primary": "#ffffff",
+              "background": "#f9f9f8",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed": "#241a00",
+              "on-surface-variant": "#414943",
+              "error": "#ba1a1a",
+              "surface-container": "#edeeed",
+              "on-secondary-container": "#745c00",
+              "tertiary-fixed": "#ffdad9",
+              "surface-bright": "#f9f9f8",
+              "inverse-on-surface": "#f0f1f0",
+              "on-background": "#191c1c",
+              "inverse-surface": "#2e3131",
+              "secondary-fixed-dim": "#e9c349",
+              "surface-container-low": "#f3f4f3",
+              "on-primary-container": "#6f9c84",
+              "primary": "#001b0f",
+              "surface-tint": "#3b6751",
+              "on-tertiary-fixed-variant": "#68393b",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed-variant": "#574500",
+              "surface-container-highest": "#e1e3e2",
+              "secondary-container": "#fed65b",
+              "on-primary-fixed-variant": "#234f3b",
+              "on-secondary": "#ffffff",
+              "primary-fixed-dim": "#a2d1b7"
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+            },
+            fontFamily: {
+              "serif": ["Instrument Serif", "serif"],
+              "sans": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .ambient-glow {
+        box-shadow: 0 40px 60px -20px rgba(25, 28, 28, 0.06);
+      }
+      .font-serif { font-family: 'Instrument Serif', serif; }
+      .font-sans { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-sans selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9f8]/80 dark:bg-[#001b0f]/80 backdrop-blur-xl transition-all duration-300">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-6">
+<div class="text-2xl font-serif font-bold tracking-tighter text-[#013220] dark:text-[#f3f4f3]">
+                SIJ
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#013220]/60 dark:text-[#f3f4f3]/60 hover:text-[#013220] dark:hover:text-[#f3f4f3] transition-colors font-sans tracking-tight" href="#">Home</a>
+<a class="text-[#013220]/60 dark:text-[#f3f4f3]/60 hover:text-[#013220] dark:hover:text-[#f3f4f3] transition-colors font-sans tracking-tight" href="#">About</a>
+<a class="text-[#013220] dark:text-[#f3f4f3] border-b-2 border-[#013220] dark:border-[#f3f4f3] pb-1 font-semibold font-sans tracking-tight" href="#">Impact</a>
+<a class="text-[#013220]/60 dark:text-[#f3f4f3]/60 hover:text-[#013220] dark:hover:text-[#f3f4f3] transition-colors font-sans tracking-tight" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary px-8 py-3 rounded-lg font-sans font-medium hover:opacity-80 transition-all duration-300 scale-95 hover:scale-100">
+                Get Involved
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Header Section -->
+<header class="max-w-7xl mx-auto px-8 mb-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<span class="inline-block bg-secondary-fixed text-on-secondary-fixed px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Social Impact Portfolio</span>
+<h1 class="text-6xl md:text-8xl font-serif italic text-primary leading-[0.9] tracking-tighter">
+                        A Record of <br/>Service &amp; Legacy.
+                    </h1>
+</div>
+<div class="md:col-span-4 pb-2">
+<p class="text-lg text-on-surface-variant leading-relaxed font-sans tracking-tight">
+                        Guided by a philosophy of quiet discipline and radical transparency, Mr. Shola Jimmy Idiagbon’s work focuses on sustainable community infrastructure and emergency human intervention.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Impact Bento Grid -->
+<section class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Feature: Clean Water -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-surface-container-lowest ambient-glow min-h-[500px] flex flex-col justify-end p-10 transition-transform duration-500 hover:-translate-y-1">
+<div class="absolute inset-0 z-0 transition-transform duration-700 group-hover:scale-105">
+<img alt="clean water initiative" class="w-full h-full object-cover grayscale-[30%] brightness-75" data-alt="dignified portrait of a community elder drawing clean water from a modern motorized borehole pump in a sun-drenched rural setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsyzk1Ul2ljy5eOfBc-5UgPgupQCe8-uIP5hQOTtW7yItytfTK-i9p_eGuZqxct6BlpzG43DRPwXHzwC1olGjeK57IZGpglPv4pnLebQpgAuabhmw_w9cRj_GDzxBHUeHcsglWkFTdfujdBJlAiCXgmpCS1QoCCW56XhafKMAAsoO1bgD9H_uqvGCk3fpA61jFdDWxTB2mRZJ9pbSWYovLt1y9bd0jQWtx0z9HgeC-zgtIIlw-m3gZmNBIYxC6dkaCv7MsTXAOINg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="water_drop">water_drop</span>
+<span class="text-surface font-sans text-sm uppercase tracking-widest">Infrastructural Development</span>
+</div>
+<h3 class="text-4xl font-serif italic text-white mb-4">Motorized Boreholes for Clean Water</h3>
+<p class="text-surface/80 max-w-xl font-sans mb-6">Restoring dignity through sustainable access. We have deployed high-capacity water systems across marginalized regions, serving over 15,000 households with reliable filtration and motorized distribution.</p>
+<div class="flex gap-4">
+<div class="bg-primary-fixed/20 backdrop-blur-md border border-primary-fixed/30 px-6 py-2 rounded-full">
+<span class="text-primary-fixed font-bold text-xl font-serif">12+</span>
+<span class="text-primary-fixed/80 text-xs uppercase tracking-tighter ml-2 font-sans">Active Sites</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Vertical Feature: Solar Energy -->
+<div class="group relative overflow-hidden rounded-xl bg-primary min-h-[500px] flex flex-col p-10 transition-all duration-300">
+<div class="absolute inset-0 z-0 opacity-40">
+<img alt="solar safety" class="w-full h-full object-cover" data-alt="perspective view of a row of modern solar street lights illuminating a community path at twilight with soft blue and gold tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD0HBdpDraSNSOCJqLRcuIN6KwteJw13sHcwsIopn4ovvt8exWaqs4XFupefzR4ze68roexuwDumCbHRZSqAus2zFhN737SCiSz9okMST24MHIRWBY0t4S1m9XlzwOZwvSgyNx6v4IqE0I5ohvQ1qq1ErmetiZgF2E2vVNXbg4j3ZXkjWuStyj-NNT1cLFYWoGvi0yBDWu_-6TLL3CnkqcDEY5KRyi4bH5TW46mQGFqptXXBvIyxxYLYVz3hlk4Xp7txSh_AXBNJs"/>
+</div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-6" data-icon="lightbulb">lightbulb</span>
+<h3 class="text-3xl font-serif italic text-white mb-4 leading-tight">Solar Energy Poles for Community Safety</h3>
+</div>
+<div>
+<p class="text-white/70 font-sans text-sm mb-8 leading-relaxed">Enhancing night-time economy and security by installing autonomous solar lighting systems in critical community hubs.</p>
+<button class="text-secondary-container flex items-center gap-2 group-hover:underline underline-offset-8 transition-all">
+<span class="font-sans font-semibold">View Deployment Map</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Crisis Intervention: The Mr. Jamiu Story -->
+<div class="md:col-span-1 rounded-xl bg-surface-container-low p-10 flex flex-col transition-all duration-300 hover:bg-white ambient-glow">
+<span class="text-secondary font-bold text-xs uppercase tracking-[0.2em] mb-4">Crisis Intervention</span>
+<h3 class="text-2xl font-serif text-primary mb-4 leading-tight">The Mr. Jamiu Story: A Life Reclaimed</h3>
+<p class="text-on-surface-variant font-sans text-sm leading-relaxed mb-8">A rapid-response case study in medical advocacy and financial bridge-building during a critical health emergency. This represents our commitment to the individual, not just the collective.</p>
+<div class="mt-auto">
+<div class="w-16 h-1 bg-secondary mb-6"></div>
+<a class="inline-flex items-center gap-2 font-sans font-bold text-primary group" href="#">
+                            Read the Narrative
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="menu_book">menu_book</span>
+</a>
+</div>
+</div>
+<!-- Impact Stat: Transparency -->
+<div class="md:col-span-1 rounded-xl bg-primary-container p-10 flex flex-col justify-center items-center text-center">
+<span class="text-primary-fixed/60 font-sans text-xs uppercase tracking-widest mb-2">Accountability Score</span>
+<div class="text-7xl font-serif italic text-primary-fixed">100%</div>
+<p class="text-primary-fixed/80 font-sans text-sm mt-4">Direct funding implementation with zero intermediary administrative leakages.</p>
+</div>
+<!-- Future Projects Grid -->
+<div class="md:col-span-1 rounded-xl bg-secondary-container p-10 flex flex-col justify-between">
+<div>
+<h4 class="text-on-secondary-container font-serif text-2xl italic leading-tight">Upcoming: The Legacy Vocational Hub</h4>
+</div>
+<p class="text-on-secondary-container/80 font-sans text-sm mb-6">Our 2025 roadmap includes the launch of a digital skills center focused on youth empowerment in semi-urban areas.</p>
+<button class="w-full py-4 bg-primary-container text-on-primary rounded-lg font-sans font-bold hover:bg-primary transition-colors">
+                        Support This Vision
+                    </button>
+</div>
+</div>
+</section>
+<!-- Signature Quote Section -->
+<section class="max-w-7xl mx-auto px-8 mt-32 text-center">
+<div class="max-w-3xl mx-auto">
+<span class="material-symbols-outlined text-outline-variant text-5xl mb-8" data-icon="format_quote">format_quote</span>
+<p class="text-3xl md:text-4xl font-serif italic text-primary leading-tight mb-8">
+                    "Philanthropy is not an act of charity, but a strategic investment in the collective resilience of our people. We build to last."
+                </p>
+<cite class="not-italic font-sans font-bold text-secondary uppercase tracking-[0.3em] text-sm">— Shola Jimmy Idiagbon</cite>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full border-t border-[#013220]/5 bg-[#f3f4f3] dark:bg-[#013220] transition-all duration-500">
+<div class="w-full px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-serif text-lg text-[#013220] dark:text-[#f3f4f3]">
+                SIJ <span class="italic font-normal">Impact</span>
+</div>
+<p class="font-sans text-sm uppercase tracking-widest text-[#013220]/70 dark:text-[#f3f4f3]/70">
+                © 2024 Shola Jimmy Idiagbon. A Legacy of Discipline.
+            </p>
+<div class="flex gap-8">
+<a class="font-sans text-sm uppercase tracking-widest text-[#013220]/70 dark:text-[#f3f4f3]/70 hover:text-[#013220] dark:hover:text-white underline-offset-4 hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="font-sans text-sm uppercase tracking-widest text-[#013220]/70 dark:text-[#f3f4f3]/70 hover:text-[#013220] dark:hover:text-white underline-offset-4 hover:underline transition-all" href="#">Terms of Service</a>
+<a class="font-sans text-sm uppercase tracking-widest text-[#013220]/70 dark:text-[#f3f4f3]/70 hover:text-[#013220] dark:hover:text-white underline-offset-4 hover:underline transition-all" href="#">Press Kit</a>
+</div>
+</div>
+</footer>
+</body></html>

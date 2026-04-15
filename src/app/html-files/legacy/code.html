@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#ffe088",
+                    "on-tertiary-fixed": "#340f12",
+                    "error": "#ba1a1a",
+                    "background": "#f9f9f8",
+                    "surface-container-low": "#f3f4f3",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#191c1c",
+                    "primary-container": "#013220",
+                    "tertiary-fixed-dim": "#f8b6b6",
+                    "surface": "#f9f9f8",
+                    "surface-bright": "#f9f9f8",
+                    "on-primary-fixed": "#002113",
+                    "inverse-on-surface": "#f0f1f0",
+                    "on-background": "#191c1c",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#ffdad9",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e1e3e2",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#bdedd2",
+                    "primary": "#001b0f",
+                    "on-tertiary-fixed-variant": "#68393b",
+                    "secondary-fixed-dim": "#e9c349",
+                    "tertiary-container": "#471e20",
+                    "on-tertiary-container": "#be8283",
+                    "outline-variant": "#c1c8c2",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-surface-variant": "#414943",
+                    "on-primary-fixed-variant": "#234f3b",
+                    "surface-dim": "#d9dad9",
+                    "surface-container": "#edeeed",
+                    "on-secondary-container": "#745c00",
+                    "surface-container-high": "#e7e8e7",
+                    "secondary": "#735c00",
+                    "secondary-container": "#fed65b",
+                    "primary-fixed-dim": "#a2d1b7",
+                    "tertiary": "#2d0a0d",
+                    "on-primary-container": "#6f9c84",
+                    "surface-container-highest": "#e1e3e2",
+                    "on-secondary-fixed": "#241a00",
+                    "inverse-surface": "#2e3131",
+                    "surface-tint": "#3b6751",
+                    "outline": "#717973",
+                    "inverse-primary": "#a2d1b7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "serif": ["Instrument Serif", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Instrument Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-kinetic {
+            line-height: 0.9;
+            letter-spacing: -0.04em;
+        }
+        .glass-panel {
+            background: rgba(249, 249, 248, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9f8]/80 dark:bg-[#001b0f]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<span class="text-2xl font-serif tracking-tight text-[#013220] dark:text-[#f3f4f3]">The Sovereign Editorial</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Instrument_Serif'] font-medium text-lg text-[#013220] dark:text-[#ffffff] border-b-2 border-[#013220] dark:border-[#f3f4f3] pb-1" href="#">Economic Blueprint</a>
+<a class="font-['Instrument_Serif'] font-medium text-lg text-gray-500 dark:text-gray-400 hover:text-[#013220] dark:hover:text-[#f3f4f3] transition-colors" href="#">Legacy</a>
+<a class="font-['Instrument_Serif'] font-medium text-lg text-gray-500 dark:text-gray-400 hover:text-[#013220] dark:hover:text-[#f3f4f3] transition-colors" href="#">Policy</a>
+<a class="font-['Instrument_Serif'] font-medium text-lg text-gray-500 dark:text-gray-400 hover:text-[#013220] dark:hover:text-[#f3f4f3] transition-colors" href="#">Metrics</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary">search</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-medium hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-90 transition-transform">Support</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero: Legacy & Character -->
+<section class="relative min-h-[921px] flex items-center px-8 md:px-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="sepia toned architectural photography of a historic nigerian estate in ilorin with traditional arched entries and warm evening sunlight" class="w-full h-full object-cover opacity-20 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW6i6617d7VBTR9jv9vMH69MfLr80J3WCIiR8LMQqDq-CPt5f9tVf8wqDLFNNfZA2utU5TPM-UijdXQRr44XM63BfsN_Sl81OO-p114EGDdRZf2MZ807PPnQnc-VRqi4Exb-4lsDxhkDC6FpWGEPkD3fcYVveHqhya9A2-DZQ_9TT89kp0_ZQ1W923UITNh-Fqb-fksO96T4eDRvktYazdoSKJS6hj92PuE2dC1VWiF8NZ2-srjSPLdADhmyqOFUs_3oc9p-XXD6s"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+</div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-12 w-full">
+<div class="md:col-span-7 flex flex-col justify-center">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-6 w-fit">The Name Behind the Vision</span>
+<h1 class="font-serif text-7xl md:text-[9rem] leading-[0.85] text-primary tracking-tighter mb-8">
+                        Shola Jimmy <br/> Idiagbon
+                    </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        Carrying a mantle of discipline and excellence into a new era of representative leadership for Kwara.
+                    </p>
+</div>
+<div class="md:col-span-5 relative flex items-end">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden shadow-2xl relative">
+<img alt="dignified portrait of Shola Jimmy Idiagbon in a dark green traditional attire against a minimalist warm grey background professional lighting" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApkyVnc0rvA5Q0eLs5UUTYwiEvHJDn3lVLi30fiuVCyG-LB1-CgneWRky_gsqfe9m_V5atgywft0f1N3qacsM3vBBx_OxxfJMBqgM7yixK2y-sxb2COSTwYiAXEUQDhALJA6Boy6D5FW_V0V-gFK1cGxGGGDpfICQM9UpzfmVmEw8j6Gk4sgwR-rYH53mfxoRtjPm5ikxGxcYdcKpJ1MCryaXaAtFyWxr7xbNmHC63_orMBp4AauSROuiy3jEkj47F11Oqto3CQnQ"/>
+<div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-primary to-transparent">
+<span class="text-secondary-fixed font-serif text-4xl">"Integrity is our only currency."</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Heritage of Integrity Section -->
+<section class="py-32 px-8 md:px-24 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-48 h-48 bg-primary-fixed/30 rounded-full blur-3xl"></div>
+<img alt="the iconic central mosque of ilorin against a clear sky capturing the architectural heritage of kwara state at dawn" class="w-full h-[600px] object-cover rounded-xl shadow-lg grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbvs6Mi1j1H_DrjPNLVCi_qLs_h-kbUXdUToR_MKA5ZvvQ3Ttz3CJ-dT3Q9aMWrXaGvLaUqtHMDm4qvsIsIhwaRkvUG1BFbavigttKQZeXZVtmNsa0u7ZRAAhFdyP7GjyyXBP3iL-PWIlHichJfWHwQUcznktltk29WXxdx3vIoYL_TbB1bwoxOAxiSLkyyuzKyWzLWzhdofxmrvxDIW9iiJugZWmHuxlx8VXQpE52LpdBgraNnlKVfrLm16i7y3AG81XU1UEa3CM"/>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="font-serif text-5xl text-primary mb-8 italic">Heritage of Integrity</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed font-body">
+<p>For generations, the name Idiagbon has been synonymous with an unyielding commitment to the Nigerian state. From the ancestral compound in Ilorin to the halls of national service, the legacy is one of unwavering character.</p>
+<p>Shola Jimmy Idiagbon bridges this storied past with a technocratic future, ensuring that the values of accountability and regional pride remain at the heart of his legislative agenda.</p>
+</div>
+<div class="mt-12 p-8 bg-surface-container-lowest rounded-xl border-l-4 border-secondary">
+<span class="block text-secondary font-bold text-sm tracking-widest uppercase mb-2">Ancestral Mandate</span>
+<p class="font-serif text-2xl text-primary italic">"We do not inherit the land from our ancestors; we borrow it from our children."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Feature: Peace & Resolution -->
+<section class="py-32 px-8 md:px-24">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 bg-primary p-12 md:p-20 rounded-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container rounded-full -mr-20 -mt-20 blur-2xl"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h3 class="text-primary-fixed text-xl font-bold tracking-widest uppercase">Global Certification</h3>
+</div>
+<h4 class="font-serif text-5xl md:text-6xl text-white mb-8">United States Institute of Peace (USIP) Specialist</h4>
+<p class="text-on-primary-container text-xl max-w-2xl leading-relaxed mb-12">
+                            Certified in Conflict Resolution, Shola brings world-class mediation expertise to the local challenges of our constituency. A leader who listens before he speaks, and builds bridges before he draws lines.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<div class="bg-primary-container/50 border border-on-primary-container/20 px-6 py-4 rounded-lg">
+<span class="text-primary-fixed font-bold block">Conflict Analysis</span>
+<span class="text-on-primary-container text-sm">Strategic Mapping</span>
+</div>
+<div class="bg-primary-container/50 border border-on-primary-container/20 px-6 py-4 rounded-lg">
+<span class="text-primary-fixed font-bold block">Negotiation</span>
+<span class="text-on-primary-container text-sm">Win-Win Frameworks</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-secondary-container p-12 rounded-xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-on-secondary-container text-5xl mb-6">handshake</span>
+<h4 class="font-serif text-4xl text-on-secondary-container mb-4">The Peacemaker</h4>
+<p class="text-on-secondary-container/80 text-lg">In an era of division, Kwara requires a representative with the technical skill to foster harmony between diverse interests.</p>
+</div>
+<div class="mt-8 border-t border-on-secondary-container/10 pt-8">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-xs font-bold uppercase tracking-widest text-on-secondary-container">Current Priority</span>
+</div>
+<p class="font-bold text-on-secondary-container">Community Mediation Centers (CMC)</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Kinetic Quote Section -->
+<section class="py-24 px-8 md:px-24 bg-surface-container-highest">
+<div class="max-w-screen-2xl mx-auto flex flex-col items-center text-center">
+<span class="text-primary/40 font-serif italic text-2xl mb-4">A Philosophy of Care</span>
+<div class="text-kinetic font-black text-7xl md:text-[12rem] text-primary uppercase flex flex-col leading-none">
+<span>Our Brother's</span>
+<span class="text-secondary pl-12 md:pl-48">Keeper</span>
+</div>
+<p class="mt-12 font-body text-2xl text-on-surface-variant max-w-3xl">
+                    Leadership is not an elevation above the people, but a deepening of responsibility toward them. 
+                </p>
+</div>
+</section>
+<!-- Archive/Compound Visuals Grid -->
+<section class="py-32 px-8 md:px-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-[700px]">
+<div class="md:col-span-8 rounded-xl overflow-hidden relative">
+<img alt="wide shot of the idiagbon family compound architecture in kwara with rich textures of stone and wood in archival morning light" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrhtM7J-lbj3fZn-6FkhohxU9i1RnOYXzeuEfnf0dT_PFqN3UCDhigUbl61y7yPSPVLbTTryfSnuOkIgcWmaddIMt5ddctlv_5d9RcEwLCmla3F8IrDGMEZXX6pWe29scctTE6mYQKjjyDDR6QANmRzdz9oGnF2ZvnkqVDrg4KlwAw6Ea-RFlLuzwVZQctk2_Qc2LYQX6TUbA4HXjjkkENouhi-gOtoThCXgu8qavJJu8Z-hHOSP-cZPcVsXEUD9beiY_nFx-nnRI"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+<div class="absolute bottom-8 left-8">
+<h5 class="text-white font-serif text-3xl">The Idiagbon Compound</h5>
+<p class="text-white/70">A legacy of hospitality and local governance.</p>
+</div>
+</div>
+<div class="md:col-span-4 grid grid-rows-2 gap-6">
+<div class="rounded-xl overflow-hidden relative">
+<img alt="close-up of skilled hands weaving traditional aso-oke fabric in a sunlit ilorin workshop vibrant textures" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7mwwVZ9gPjnEjBjZhrrC4XQNoKaiLNwJiMk_USxc-vY1zPBv1SeO5-NZeAvzpXmdvfSytw1ZbWtI2tJXDa_SB49TaNJB94td8He9yOYh9_rA-5wUF_eAzNTRtLclDeRg895PWEsymhs9C0OY180nPyA8LXVDK_FT-LdGp-UrQvRwFtu1x397g3MwjiBadVIoC62URicTIlNzUupJ1Q_zONDcBF4roKznAT5imwELgacZwKqHfemTF3saazMawEd7mWGJTBFU2myI"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+</div>
+<div class="rounded-xl overflow-hidden relative">
+<img alt="Shola Idiagbon speaking at a roundtable discussion with community elders in a formal yet warm setting soft overhead light" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiTNyfG3OxZCvcdt-PcxegwRkgyVc4dSmX1ndgyJPIL--euy3KNRPiN4a7OL0BZuFNWNrCsUoBPWq81T63XkLOOxdYrm3j9Lvp1mo5x2_KYCPAZQXcgmEXZQoKf8kYdnXWMz96GKZWQITL2dgEAKBRTYSAIsMFfX0uDZxGAtVP5TDQet16OZyD6Zs86JWTg5Sclj6weN4L5WI4So41ebwf7NYrNl_stlQfO7LCpZD5LBbQ8gpLmX3pjtNb0K5AspyjXQEGy2_PaHw"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-[#f3f4f3] dark:bg-[#001b0f]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="mb-8 md:mb-0">
+<span class="font-serif text-xl text-[#013220] dark:text-[#f3f4f3]">The Sovereign Editorial</span>
+<p class="font-['Inter'] text-sm tracking-wide opacity-70 mt-2">© 2024 The Sovereign Editorial. All Rights Reserved.</p>
+</div>
+<div class="flex flex-wrap gap-8 justify-center">
+<a class="font-['Inter'] text-sm tracking-wide opacity-70 hover:opacity-100 hover:text-[#013220] dark:hover:text-white transition-all duration-200" href="#">Integrity Report</a>
+<a class="font-['Inter'] text-sm tracking-wide opacity-70 hover:opacity-100 hover:text-[#013220] dark:hover:text-white transition-all duration-200" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-sm tracking-wide opacity-70 hover:opacity-100 hover:text-[#013220] dark:hover:text-white transition-all duration-200 underline font-semibold" href="#">Archival Access</a>
+<a class="font-['Inter'] text-sm tracking-wide opacity-70 hover:opacity-100 hover:text-[#013220] dark:hover:text-white transition-all duration-200" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
