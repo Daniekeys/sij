@@ -35,7 +35,7 @@ export default function Home() {
           className="overflow-hidden px-6 py-14 md:px-10 md:py-20"
         >
           <div className="mx-auto grid max-w-7xl items-center gap-10 md:grid-cols-12">
-            <div className="md:col-span-7">
+            <div className="animate-fade-up md:col-span-7">
               <div className="mb-6 inline-flex rounded-full bg-secondary-container px-4 py-1 text-xs font-bold uppercase tracking-[0.25em] text-on-secondary-container">
                 The Sovereign Editorial
               </div>
@@ -51,23 +51,23 @@ export default function Home() {
                 excellence, we forge a path for the next generation.
               </p>
 
-              <div className="flex flex-col gap-3 sm:flex-row">
+              <div className="animate-fade-up delay-1 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/legacy"
-                  className="rounded-xl bg-gradient-to-br from-primary to-primary-container px-6 py-4 text-center font-semibold text-on-primary transition hover:opacity-90"
+                  className="cta-magic glow-pulse rounded-xl bg-gradient-to-br from-primary to-primary-container px-6 py-4 text-center font-semibold text-on-primary transition hover:opacity-90"
                 >
                   Explore the Mission →
                 </Link>
                 <Link
                   href="/economic-blueprint"
-                  className="rounded-xl bg-surface-container-low px-6 py-4 text-center font-semibold text-primary transition hover:bg-surface-container"
+                  className="card-magic rounded-xl bg-surface-container-low px-6 py-4 text-center font-semibold text-primary transition hover:bg-surface-container"
                 >
                   View Impact
                 </Link>
               </div>
             </div>
 
-            <div className="relative md:col-span-5">
+            <div className="animate-fade-up delay-2 relative md:col-span-5">
               <div className="ambient-glow relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-lowest">
                 <Image
                   src={jimmyBlue}
@@ -79,7 +79,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-primary/5 mix-blend-multiply" />
               </div>
-              <div className="absolute -bottom-8 -right-4 h-40 w-40 rounded-full bg-secondary-fixed/40 blur-3xl" />
+              <div className="float-gentle absolute -bottom-8 -right-4 h-40 w-40 rounded-full bg-secondary-fixed/40 blur-3xl" />
             </div>
           </div>
         </section>
@@ -119,7 +119,7 @@ export default function Home() {
               {pillars.map((pillar) => (
                 <article
                   key={pillar.title}
-                  className="rounded-xl bg-surface-container-lowest p-8 shadow-ambient transition hover:-translate-y-1 hover:bg-primary-container hover:text-white"
+                  className="card-magic rounded-xl bg-surface-container-lowest p-8 shadow-ambient transition hover:bg-primary-container hover:text-white"
                 >
                   <div className="mb-6 inline-flex rounded-lg bg-primary-fixed px-3 py-2 text-sm font-semibold text-on-primary-fixed">
                     •
@@ -157,7 +157,7 @@ export default function Home() {
             </header>
 
             <div className="grid gap-6 md:grid-cols-3">
-              <article className="ambient-glow relative min-h-[460px] overflow-hidden rounded-xl md:col-span-2">
+              <article className="ambient-glow card-magic relative min-h-[460px] overflow-hidden rounded-xl md:col-span-2">
                 <div
                   className="absolute inset-0 bg-cover bg-center transition duration-700"
                   style={{
@@ -183,7 +183,7 @@ export default function Home() {
                 </div>
               </article>
 
-              <article className="relative min-h-[460px] overflow-hidden rounded-xl bg-primary">
+              <article className="card-magic relative min-h-[460px] overflow-hidden rounded-xl bg-primary">
                 <div
                   className="absolute inset-0 bg-cover bg-center opacity-40"
                   style={{
@@ -216,7 +216,7 @@ export default function Home() {
                 </div>
               </article>
 
-              <article className="rounded-xl bg-surface-container-low p-8 shadow-ambient">
+              <article className="card-magic rounded-xl bg-surface-container-low p-8 shadow-ambient">
                 <span className="mb-4 block text-xs font-bold uppercase tracking-[0.25em] text-secondary">
                   Crisis Intervention
                 </span>
@@ -232,7 +232,7 @@ export default function Home() {
                 </Link>
               </article>
 
-              <article className="rounded-xl bg-primary-container p-8 text-center text-primary-fixed">
+              <article className="card-magic rounded-xl bg-primary-container p-8 text-center text-primary-fixed">
                 <span className="text-xs uppercase tracking-[0.25em] text-primary-fixed/70">
                   Accountability Score
                 </span>
@@ -242,7 +242,7 @@ export default function Home() {
                 </p>
               </article>
 
-              <article className="rounded-xl bg-secondary-container p-8 text-on-secondary-container">
+              <article className="card-magic rounded-xl bg-secondary-container p-8 text-on-secondary-container">
                 <h3 className="mb-4 font-headline text-2xl italic">
                   Upcoming: The Legacy Vocational Hub
                 </h3>
@@ -291,7 +291,7 @@ export default function Home() {
               />
               <Link
                 href="/join-movement"
-                className="rounded-xl bg-secondary-container px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-on-secondary-container transition hover:opacity-90"
+                className="cta-magic rounded-xl bg-secondary-container px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-on-secondary-container transition hover:opacity-90"
               >
                 Subscribe
               </Link>

@@ -15,7 +15,7 @@ export default function LegacyPage() {
       <SiteNavbar ctaLabel="Support" ctaHref="/join-movement" />
 
       <main className="pt-24 sm:pt-28">
-        <section className="relative overflow-hidden px-6 py-16 md:px-8 md:py-24">
+        <section className="animate-fade-up relative overflow-hidden px-6 py-16 md:px-8 md:py-24">
           <div
             className="absolute inset-0 opacity-20 grayscale"
             style={{
@@ -39,7 +39,7 @@ export default function LegacyPage() {
               </p>
             </div>
             <div className="md:col-span-5">
-              <div className="ambient-glow relative aspect-[4/5] overflow-hidden rounded-xl">
+              <div className="ambient-glow float-gentle relative aspect-[4/5] overflow-hidden rounded-xl">
                 <Image
                   src={jimmyWhite}
                   alt="Jimmy Idiagbon portrait"
@@ -78,7 +78,7 @@ export default function LegacyPage() {
                   public duty.
                 </p>
               </div>
-              <div className="mt-8 rounded-xl bg-surface-container-lowest p-6 shadow-ambient">
+              <div className="card-magic mt-8 rounded-xl bg-surface-container-lowest p-6 shadow-ambient">
                 <p className="font-headline text-2xl italic text-primary">
                   We do not inherit the land from our ancestors; we borrow it
                   from our children.
@@ -90,7 +90,7 @@ export default function LegacyPage() {
 
         <section className="px-6 py-16 md:px-8 md:py-24">
           <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-3">
-            <article className="rounded-xl bg-primary p-8 text-white md:col-span-2">
+            <article className="card-magic rounded-xl bg-primary p-8 text-white md:col-span-2">
               <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-secondary-fixed">
                 Global Certification
               </p>
@@ -102,7 +102,7 @@ export default function LegacyPage() {
                 expertise to local challenges and community bridge-building.
               </p>
             </article>
-            <article className="rounded-xl bg-secondary-container p-8 text-on-secondary-container">
+            <article className="card-magic rounded-xl bg-secondary-container p-8 text-on-secondary-container">
               <h3 className="mb-4 font-headline text-3xl">The Peacemaker</h3>
               <p className="leading-8 text-on-secondary-container/80">
                 A representative with the technical skill to foster harmony
@@ -123,13 +123,13 @@ export default function LegacyPage() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
               href="/economic-blueprint"
-              className="rounded-full bg-primary px-6 py-3 font-semibold text-on-primary"
+              className="cta-magic glow-pulse rounded-full bg-primary px-6 py-3 font-semibold text-on-primary"
             >
               View Economic Blueprint
             </Link>
             <Link
               href="/join-movement"
-              className="rounded-full bg-secondary-container px-6 py-3 font-semibold text-on-secondary-container"
+              className="cta-magic rounded-full bg-secondary-container px-6 py-3 font-semibold text-on-secondary-container"
             >
               Join the Movement
             </Link>

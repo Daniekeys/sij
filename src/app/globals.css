@@ -16,6 +16,98 @@ body {
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  border-radius: 9999px;
+  filter: blur(70px);
+  pointer-events: none;
+  animation: drift 14s ease-in-out infinite;
+}
+
+body::before {
+  top: 6rem;
+  left: -4rem;
+  height: 16rem;
+  width: 16rem;
+  background: rgba(162, 209, 183, 0.34);
+}
+
+body::after {
+  right: -5rem;
+  bottom: 3rem;
+  height: 18rem;
+  width: 18rem;
+  background: rgba(254, 214, 91, 0.2);
+  animation-delay: 1s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(12px, -18px, 0) scale(1.06);
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(1, 50, 32, 0.18);
+  }
+  50% {
+    box-shadow: 0 18px 45px rgba(1, 50, 32, 0.22);
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-140%) skewX(-18deg);
+  }
+  55%,
+  100% {
+    transform: translateX(180%) skewX(-18deg);
+  }
 }
 
 @layer utilities {
@@ -29,5 +121,78 @@ body {
 
   .ambient-glow {
     box-shadow: 0 40px 60px -20px rgba(25, 28, 28, 0.06);
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-fade-down {
+    animation: fadeDown 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .delay-1 {
+    animation-delay: 0.12s;
+  }
+
+  .delay-2 {
+    animation-delay: 0.24s;
+  }
+
+  .delay-3 {
+    animation-delay: 0.36s;
+  }
+
+  .float-gentle {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .glow-pulse {
+    animation: glowPulse 3.2s ease-in-out infinite;
+  }
+
+  .card-magic {
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease,
+      background-color 0.35s ease;
+  }
+
+  .card-magic:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 60px -24px rgba(1, 27, 15, 0.2);
+  }
+
+  .cta-magic {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .cta-magic::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      115deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.05) 40%,
+      rgba(255, 255, 255, 0.32) 50%,
+      transparent 60%
+    );
+    transform: translateX(-140%) skewX(-18deg);
+    animation: shine 4.8s ease-in-out infinite;
+    z-index: -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

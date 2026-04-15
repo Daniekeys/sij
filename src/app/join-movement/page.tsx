@@ -22,7 +22,7 @@ export default function JoinMovementPage() {
       <SiteNavbar ctaLabel="Endorse SIJ" ctaHref="/economic-blueprint" />
 
       <main className="mx-auto max-w-7xl px-6 py-10 pt-28 md:px-8 md:py-16 md:pt-32">
-        <section className="grid gap-10 lg:grid-cols-12">
+        <section className="animate-fade-up grid gap-10 lg:grid-cols-12">
           <div className="space-y-6 lg:col-span-5">
             <div>
               <h1 className="font-headline text-5xl leading-tight text-primary md:text-7xl">
@@ -35,7 +35,7 @@ export default function JoinMovementPage() {
                 transparency, and grassroots empowerment in Ilorin.
               </p>
             </div>
-            <div className="ambient-glow relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
+            <div className="ambient-glow float-gentle relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
               <Image
                 src={jimmyWhite}
                 alt="Jimmy Idiagbon in white attire"
@@ -49,7 +49,7 @@ export default function JoinMovementPage() {
           </div>
 
           <div className="space-y-8 lg:col-span-7">
-            <section className="rounded-[1.5rem] bg-surface-container-lowest p-8 shadow-ambient md:p-10">
+            <section className="card-magic rounded-[1.5rem] bg-surface-container-lowest p-8 shadow-ambient md:p-10">
               <span className="mb-2 block text-xs font-bold uppercase tracking-[0.25em] text-secondary">
                 Volunteer for SIJ
               </span>
@@ -93,14 +93,14 @@ export default function JoinMovementPage() {
               <div className="mt-8">
                 <Link
                   href="/legacy"
-                  className="flex w-full items-center justify-center rounded-xl bg-secondary-container px-6 py-4 text-center text-sm font-bold uppercase tracking-[0.2em] text-on-secondary-container"
+                  className="cta-magic glow-pulse flex w-full items-center justify-center rounded-xl bg-secondary-container px-6 py-4 text-center text-sm font-bold uppercase tracking-[0.2em] text-on-secondary-container"
                 >
                   Submit Interest
                 </Link>
               </div>
             </section>
 
-            <section className="rounded-[1.5rem] bg-surface-container-low p-8 md:p-10">
+            <section className="card-magic rounded-[1.5rem] bg-surface-container-low p-8 md:p-10">
               <div className="mb-8 flex items-end justify-between gap-4">
                 <div>
                   <span className="mb-2 block text-xs font-bold uppercase tracking-[0.25em] text-secondary">
@@ -122,7 +122,7 @@ export default function JoinMovementPage() {
                 {events.map(([date, title, meta]) => (
                   <article
                     key={title}
-                    className="rounded-xl bg-surface-container-lowest p-5"
+                    className="card-magic rounded-xl bg-surface-container-lowest p-5"
                   >
                     <div className="mb-2 text-xs font-bold uppercase tracking-[0.25em] text-secondary">
                       {date}
@@ -140,7 +140,7 @@ export default function JoinMovementPage() {
           </div>
         </section>
 
-        <section className="mt-16 rounded-[1.5rem] bg-primary-container px-8 py-12 text-white md:px-12">
+        <section className="animate-fade-up delay-1 mt-16 rounded-[1.5rem] bg-primary-container px-8 py-12 text-white md:px-12">
           <h2 className="max-w-3xl font-headline text-3xl md:text-5xl">
             Governance is a shared responsibility. Your voice is the catalyst
             for change.
@@ -148,7 +148,7 @@ export default function JoinMovementPage() {
           <div className="mt-6 flex flex-wrap gap-4">
             <Link
               href="/economic-blueprint"
-              className="rounded-full bg-secondary-container px-6 py-3 font-semibold text-on-secondary-container"
+              className="cta-magic rounded-full bg-secondary-container px-6 py-3 font-semibold text-on-secondary-container"
             >
               Read the Blueprint
             </Link>

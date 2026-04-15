@@ -32,7 +32,7 @@ export default function EconomicBlueprintPage() {
       <SiteNavbar ctaLabel="Support" ctaHref="/join-movement" />
 
       <main className="mx-auto max-w-7xl px-6 py-10 pt-28 md:px-8 md:py-16 md:pt-32">
-        <section className="mb-16 grid gap-10 md:grid-cols-12">
+        <section className="animate-fade-up mb-16 grid gap-10 md:grid-cols-12">
           <div className="md:col-span-8">
             <span className="mb-5 inline-flex rounded-full bg-primary-fixed px-4 py-1 text-xs font-bold uppercase tracking-[0.25em] text-on-primary-fixed">
               Executive Strategy 2024
@@ -47,7 +47,7 @@ export default function EconomicBlueprintPage() {
             </p>
           </div>
           <div className="md:col-span-4">
-            <div className="ambient-glow relative aspect-[4/5] overflow-hidden rounded-xl grayscale transition hover:grayscale-0">
+            <div className="ambient-glow float-gentle relative aspect-[4/5] overflow-hidden rounded-xl grayscale transition hover:grayscale-0">
               <Image
                 src={jimmyBlue}
                 alt="Jimmy Idiagbon in blue suit"
@@ -75,7 +75,7 @@ export default function EconomicBlueprintPage() {
         </section>
 
         <section className="grid gap-6 md:grid-cols-3">
-          <article className="rounded-xl bg-surface-container-lowest p-8 shadow-ambient md:col-span-2">
+          <article className="card-magic rounded-xl bg-surface-container-lowest p-8 shadow-ambient md:col-span-2">
             <div className="mb-8 flex items-center justify-between gap-4">
               <div>
                 <p className="mb-2 text-xs font-bold uppercase tracking-[0.25em] text-secondary">
@@ -109,7 +109,7 @@ export default function EconomicBlueprintPage() {
             </div>
           </article>
 
-          <article className="rounded-xl bg-primary p-8 text-on-primary">
+          <article className="card-magic rounded-xl bg-primary p-8 text-on-primary">
             <h3 className="mb-6 font-headline text-3xl">
               Executive Competencies
             </h3>
@@ -125,7 +125,7 @@ export default function EconomicBlueprintPage() {
             </div>
           </article>
 
-          <article className="rounded-xl bg-surface-container-low p-8">
+          <article className="card-magic rounded-xl bg-surface-container-low p-8">
             <h3 className="mb-4 font-headline text-3xl text-primary">
               IT Infrastructure
             </h3>
@@ -142,7 +142,7 @@ export default function EconomicBlueprintPage() {
             </div>
           </article>
 
-          <article className="rounded-xl bg-secondary-container p-8 text-on-secondary-container md:col-span-2">
+          <article className="card-magic rounded-xl bg-secondary-container p-8 text-on-secondary-container md:col-span-2">
             <h3 className="mb-4 font-headline text-4xl">
               Attracting UAE Investment to Ilorin
             </h3>
@@ -152,7 +152,7 @@ export default function EconomicBlueprintPage() {
             </p>
             <Link
               href="/join-movement"
-              className="inline-flex rounded-full bg-primary px-6 py-3 font-semibold text-on-primary"
+              className="cta-magic glow-pulse inline-flex rounded-full bg-primary px-6 py-3 font-semibold text-on-primary"
             >
               View Blueprint in Action
             </Link>
